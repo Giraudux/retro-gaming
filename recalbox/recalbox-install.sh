@@ -73,7 +73,7 @@ fi
 # }
 # trap cleanup_hook EXIT
 
-sudo umount "$device"*
+sudo umount --quiet "$device"*
 
 recalbox_img_url=$(printf "$recalbox_img_url_tpl" "$platform" "$platform")
 
